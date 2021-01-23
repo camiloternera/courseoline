@@ -103,7 +103,7 @@ body {
   font-family: 'Heebo', sans-serif;
 }
 i {
-  color: #CDE1D7; 
+  color: #CDE1D7;
 }
 h1, h2 {
   margin: 0;
@@ -314,6 +314,15 @@ hr {
 .content-welcome {
   display: grid;
 }
+.imagen-course img {
+  /* filter: gray; */
+  /* -webkit-filter: grayscale(1); */
+  transition: all .5s ease-in-out;
+}
+.imagen-course img:hover {
+  /* -webkit-filter: grayscale(0); */
+  -webkit-transform: scale(1.1);
+}
 .parrafo-welcome {
   width: 95%;
   margin: 0 auto;
@@ -324,19 +333,33 @@ hr {
   margin: 4rem 0;
 }
 .parrafo-welcome .parrafo {
-  margin: ;
+  margin-bottom: 5rem;
+}
+.parrafo-welcome .button {
+  width: 100%;
+  text-align: center;
+  transition: all .5s ease;
+}
+.parrafo-welcome .button:hover {
+  background-color: #D7DF21;
 }
 @media only screen and (min-width: 768px) {
   .content-welcome {
     grid-template-columns: 50% 50%;
     grid-column-gap: 2rem;
-
   }
   .imagen-course {
     grid-column: 1 / 2;
   }
   .parrafo-welcome {
     grid-column: 2 / 3;
+  }
+  .parrafo-welcome .parrafo {
+    margin-bottom: 2rem;
+  }
+  .parrafo-welcome .button {
+    width: auto;
+    text-align: center;
   }
 }
 
@@ -367,10 +390,14 @@ hr {
   margin: 1rem 0 4rem 0;
   text-align: justify;
 }
-.content-course a {
+.content-course .button {
   padding: 1rem;
   display: block;
   text-align: center;
+  transition: all .5s ease;
+}
+.content-course .button:hover {
+  background-color: #D7DF21;
 }
 @media only screen and (min-width: 768px) {
   .container-courses {
@@ -397,6 +424,12 @@ hr {
   flex: 0 0 95%;
   color: #3B3543;
 }
+.content-contact .button {
+  transition: all .5s ease;
+}
+.content-contact .button:hover {
+  background-color: #D7DF21;
+}
 
 /*----- Next Courses -----*/
 .next-courses .texto {
@@ -406,6 +439,16 @@ hr {
   text-decoration: none;
   color: rgb(150,150,150);
   font-size: 2rem;
+  /*main-bar de Scroll abajo*/
+  background-image: linear-gradient(#D7DF21, #D7DF21);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% .3rem;
+  transition: background-size .3s;
+}
+.content-course .button__next--course:hover, .content-course .button__next--course:focus {
+  background-size: 60% .3rem;
+  /*End*/
 }
 .content-course .button__next--course::after {
   font-family: 'FontAwesome';
@@ -427,7 +470,7 @@ hr {
 .container-footer p {
   margin: 0;
   text-align: center;
-  color: #fff; 
+  color: #fff;
 }
 .container-footer .navegation {
   display: none;
@@ -435,7 +478,7 @@ hr {
 @media only screen and (min-width: 768px) {
   hr {
     display: block;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
   }
   .container-footer {
@@ -446,6 +489,7 @@ hr {
   .container-footer .navegation {
     display: block;
     text-align: center;
+    margin-bottom: 1rem;
   }
   .container-footer .navegation a {
     color: #fff;
@@ -455,6 +499,7 @@ hr {
     margin-right: 0;
   }
   .container-footer p {
+    margin-top: 1rem;
     font-size: 2rem;
   }
 }
