@@ -87,7 +87,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 :root {
-  --primario: #056839;
+  --primario: #1F527D;
+  --secundario: #EC3475;
+
+  --fuentePrincipal: 'Yanone Kaffeesatz', sans-serif;
 }
 
 /* Globales */
@@ -104,6 +107,9 @@ body {
 }
 i {
   color: #CDE1D7;
+}
+a {
+  text-decoration: none;
 }
 h1, h2 {
   margin: 0;
@@ -122,7 +128,7 @@ img {
   font-size: 1.8rem;
   padding: 1rem 3rem;
   display: inline-block;
-  background-color: var(--primario);
+  background-color: var(--secundario);
 }
 hr {
   display: none;
@@ -144,7 +150,7 @@ hr {
 
 /*----- Site-header -----*/
 .container-footer-header {
-  background-color: var(--primario);
+  background-color: var(--secundario);
 }
 .footer-header {
   padding: 1rem 0;
@@ -185,6 +191,7 @@ hr {
   display: flex;
   flex-direction: column;
   grid-row-gap: 1rem;
+  align-items: center;
 }
 .footer-header .session a {
   text-decoration: none;
@@ -206,69 +213,100 @@ hr {
 }
 /*navegation 3*/
 .logo {
-  width: 80%;
-  float: left;
+  padding: 1rem 0;
+  text-decoration: none;
+  font-size: 3.8rem;
+  color: var(--primario);
+  font-family: var(--fuentePrincipal); /* 'Heebo', sans-serif; */
+  font-weight: bold;
+  text-transform: uppercase;
 }
-.main-brand {
-  padding: 2rem 0;
+.navegation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.menu-movil {
-  width: 20%;
-  float: right;
+.navegation__main {
+  display: none;
+  width: 100%;
+}
+.navegation__main a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  padding: .5rem 0;
+  color: #808080;
+  font-size: 2rem;
+  /*main-bar de Scroll abajo*/
+  background-image: linear-gradient(var(--primario), var(--primario));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% .3rem;
+  transition: background-size 3s;
+  transition: background-color .3s;
+}
+.navegation__main a:hover, .navegation__main a:focus {
+  /* background-size: 99% .3rem; */
+  background-color: rgba(31, 82, 129, .5);
+  border-radius: .2rem;
+  /*End*/
+}
+.navegation__main a:last-of-type {
+  margin-bottom: 2rem;
+}
+.navegation__mobile {
+  width: 4.5rem;
   text-align: right;
-  font-size: 4rem;
-  line-height: 2;
+  /* margin-top: 1rem; */
 }
-.menu-movil i {
-  color: #555555;
+.navegation__mobile span {
+  height: .8rem;
+  margin-bottom: .5rem;
+  background-color: #363636;
+  display: block;
+  border-radius: .2rem;
 }
-.menu-movil:hover {
+.navegation__mobile:hover {
   cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
-  .menu-movil {
+  .navegation__mobile {
     display: none;
   }
-}
-.main-bar .navegation {
-  display: none;
-}
-@media only screen and (min-width: 768px) {
-  .main-bar {
-    display: flex;
-    justify-content: space-between;
+  .logo {
+    font-size: 3.8rem;
     padding: 1rem 0;
   }
-  .content-navegation .main-brand {
-    padding: 0;
-  }
-  .main-bar .navegation {
-    display: inline-flex;
+  .navegation__main {
+    display: flex;
+    width: auto;
     align-items: center;
   }
-  .navegation a {
-    text-decoration: none;
-    color: #808080;
+  .navegation__main a {
+    padding: 0;
     margin-right: 3rem;
-    font-size: 2rem;
     /*main-bar de Scroll abajo*/
-    background-image: linear-gradient(#056839, #056839);
+    background-image: linear-gradient(var(--primario), var(--primario));
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% .3rem;
     transition: background-size .3s;
   }
-  .navegation a:hover, .navegation a:focus {
+  .navegation__main a:hover, .navegation__main a:focus {
     background-size: 60% .3rem;
     /*End*/
+    background-color: inherit;
+    border-radius: unset;
   }
-  .navegation a:last-of-type {
-    margin-right: 0;
+  .navegation__main a:last-of-type {
+    margin: 0;
   }
 }
 /*----- Hero -----*/
 .hero {
-  height: 60rem;
+  height: 55rem;
   background-image: url(../img/fondo.jpg);
   background-size: cover;
   background-position: center center;
@@ -301,13 +339,15 @@ hr {
     margin: 0;
     text-transform: uppercase;
     overflow: auto;
+    line-height: 1;
 }
-.contenedor-hero p {
+.text {
     margin: 0;
-    font-family: 'Rubik', sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 2rem;
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+    background-color: rgba(255,0,108,0.3);
+    text-transform: uppercase;
+    padding: 1rem 0;
 }
 
 /*----- Welcome To -Titutlo- -----*/

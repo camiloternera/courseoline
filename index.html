@@ -18,7 +18,7 @@
   <!-- Place favicon.ico in the root directory -->
   <!-- CSS & Normalize (Clear default style) -->
   <link rel="preload" href="css/normalize.css" as="style">
-  <link rel="preload" href="css/main.css" as="style">
+  <link rel="preload" href="css/index.css" as="style">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
   <!-- FontAwesome -->
@@ -27,8 +27,8 @@
   <script src="https://kit.fontawesome.com/14636498a2.js" crossorigin="anonymous"></script>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Rubik:wght@400;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -39,43 +39,52 @@
       <nav class="footer-header container">
         <div class="information">
           <a href="tel:7777777777"><i class="fas fa-phone"></i>+7777777777</a>
-          <a href="mailto:info@educon.edu"><i class="fas fa-envelope"></i>info@educon.edu</a>
-        </div>
-        <!--.informacion-->
+          <a href="mailto:info@funcatec.edu"><i class="fas fa-envelope"></i>info@funcatec.edu</a>
+        </div><!-- .informacion -->
         <div class="session">
-          <a href="login.html"><i class="fas fa-sign-in-alt"></i>Login</a>
+          <a href="https://classroom.google.com/u/0/h?hl=es"><i class="fas fa-sign-in-alt"></i>Login</a>
           <!-- <a href="sign-up.html"><i class="fas fa-user-plus"></i>Sing up</a> -->
-        </div>
-        <!--.sesion-->
-      </nav>
-      <!--.footer-header-->
+        </div><!-- .sesion -->
+      </nav><!-- .footer-header -->
     </div><!-- .contenido-header -->
-    <div class="content-navegation">
-      <div class="main-bar container clearfix">
-        <div class="logo">
-          <h1 class="main-brand">Logo</h1>
-        </div>
-        <div class="menu-movil">
-          <i class="fas fa-bars"></i>
-        </div>
-        <nav class="navegation cleafix">
+    <div class="bar">
+      <div class="navegation container">
+        <a class="logo" href="index.html">Funcatec</a>
+        <div class="navegation__mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div><!--.menu-movil-->
+        <nav class="navegation__main">
           <a href="index.html">Inicio</a>
           <a href="cursos.html">Cursos</a>
           <a href="anuncios.html">Anuncios</a>
           <a href="blog.html">Blog</a>
-          <a href="contactanos.html">Contáctanos</a>
+          <a href="contactanos.html">Contactanos</a>
         </nav>
-        <!--.navegation-->
-      </div>
-      <!--.barra-->
-    </div>
-    <!--.content-navegation-->
+      </div><!-- .navegation -->
+    </div><!-- .bar -->
+        <!-- <nav class="navegation">
+          <ul class="navegation__items">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="anuncios.html">Anuncios</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contactanos.html">Contáctanos</a></li>
+          </ul>
+        </nav> -->
   </header>
 
   <section class="hero">
     <div class="container-hero container">
-      <h2 class="text-hero">Welcome to -Titile-</h2>
-      <p>-Subtitle or Slogan-</p>
+      <h2 class="text-hero">Bienvenido a Funcatec</h2>
+      <p class="text">
+        <span class="typed"></span>
+      </p>
+      <div class="text" id="text">
+        <p>Capacitate con nosotros</p>
+        <p>Da el primer paso para cumplir tus sueños</p>
+      </div>
     </div>
   </section>
 
@@ -85,17 +94,12 @@
         <img src="img/course.jpeg" alt="">
       </div>
       <div class="parrafo-welcome">
-        <h2 class="texto">Welcome To -Titulo-</h2>
-        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium placeat, ut quos,
-          architecto cum suscipit beatae perferendis dolor nam optio recusandae at hic accusamus voluptates explicabo
-          asperiores dolore quam.
-          Veritatis fuga quia necessitatibus alias accusamus quibusdam unde id minus illum porro accusantium placeat,
-          quidem ad ratione suscipit deserunt impedit itaque rerum doloremque ab eligendi, aspernatur, mollitia error
-          sit, ex.</p>
-        <a href="#" class="button">Leer más</a>
+        <h2 class="texto">Bienvenido a Funcate</h2>
+        <p class="parrafo">La fundacion social para la capacitacion y desarrollo tecnologico de belleza y artes en colombia, es una fundacion sin animo de lucro que ofrece no solo la oportunidad de aprender un arte u oficio, sino la orientacion necesaria para que los estudiantes se motiven a ejercer o llevar a la practica los conocimientos y tecnicas enseñadas.</p>
+        <a href="" class="button">Leer más</a>
       </div>
-    </div><!-- .content-welcome-->
-  </section><!-- .seccion-->
+    </div><!-- .content-welcome -->
+  </section><!-- .seccion -->
 
   <main>
     <section class="seccion container our__featured--courses">
@@ -192,8 +196,7 @@
         <a href="anuncios.html">Anuncios</a>
         <a href="blog.html">Blog</a>
         <a href="contactanos.html">Contáctanos</a>
-      </nav>
-      <!--.navegation-->
+      </nav><!-- .navegation -->
       <hr>
       <p class="copyright">Camilo Ternera Duque - Todos los derechos reservados 2021 ©</p>
     </div>
@@ -201,6 +204,8 @@
   <!-- End site -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/typed.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
