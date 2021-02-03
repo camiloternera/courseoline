@@ -227,10 +227,6 @@ hr {
   align-items: center;
   flex-wrap: wrap;
 }
-.navegation__main {
-  display: none;
-  width: 100%;
-}
 .navegation__main a {
   display: inline-block;
   width: 100%;
@@ -253,6 +249,7 @@ hr {
   border-radius: .2rem;
   /*End*/
 }
+
 .navegation__main a:last-of-type {
   margin-bottom: 2rem;
 }
@@ -271,6 +268,10 @@ hr {
 .navegation__mobile:hover {
   cursor: pointer;
 }
+.navegation__main {
+  display: none;
+  width: 100%;
+}
 @media only screen and (min-width: 768px) {
   .navegation__mobile {
     display: none;
@@ -280,7 +281,7 @@ hr {
     padding: 1rem 0;
   }
   .navegation__main {
-    display: flex;
+    /* display: flex; */
     width: auto;
     align-items: center;
   }

@@ -25,16 +25,19 @@
 
     // Menu Responsive
 		$('.navegation__mobile').on('click', function() {
-			$('.navegation__main').slideToggle();
+      $('.navegation__main').slideToggle();
+      $('.navegation__main').attr('style', 'display:block'); // Linea para que la navegacion se display block
     });
     // Reaccionar a Resize en la pantalla
     let breakpoint = 768;
 		$(window).resize(function() {
 			if ($(document).width() >= breakpoint) {
-				$('.navegation__main').show();
+        $('.navegation__main').show();
+        $('.navegation__main').attr('style', 'display:flex'); // Linea para que la navegacion se display flex despues de 768px
 			} else {
-				$('.navegation__main').hide();
+        $('.navegation__main').hide();
+
 			}
-		});
+    });
   });
 })();
