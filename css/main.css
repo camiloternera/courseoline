@@ -227,6 +227,9 @@ hr {
   align-items: center;
   flex-wrap: wrap;
 }
+.navegation__main {
+  display: flex;
+}
 .navegation__main a {
   display: inline-block;
   width: 100%;
@@ -281,7 +284,7 @@ hr {
     padding: 1rem 0;
   }
   .navegation__main {
-    /* display: flex; */
+    display: flex;
     width: auto;
     align-items: center;
   }
@@ -340,7 +343,7 @@ hr {
     margin: 0;
     text-transform: uppercase;
     overflow: auto;
-    line-height: 1;
+    /* line-height: 1; */
 }
 .text {
     margin: 0;
