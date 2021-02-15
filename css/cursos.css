@@ -314,12 +314,12 @@
         display: grid;
         row-gap: 2rem;
     }
-    .container-courses .course {
+    .course {
       border: 0.1rem solid #b5b5b5;
       background-color: rgb(238, 238, 238);
       transition: all .3s ease;
     }
-    .container-courses .course:hover {
+    .course:hover {
       transform: scale(1.01);
       border: .1rem solid #056839;
       box-shadow: 0 0 5rem #666666;

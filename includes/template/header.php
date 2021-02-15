@@ -43,13 +43,12 @@
         </div><!-- .informacion -->
         <div class="session">
           <a href="https://classroom.google.com/u/0/h?hl=es"><i class="fas fa-sign-in-alt"></i>Login</a>
-          <!-- <a href="sign-up.html"><i class="fas fa-user-plus"></i>Sing up</a> -->
         </div><!-- .sesion -->
       </nav><!-- .footer-header -->
     </div><!-- .contenido-header -->
     <div class="bar">
       <div class="navegation container">
-        <a class="logo" href="index.html">Funcatec</a>
+        <a class="logo" href="index.php">Funcatec</a>
         <div class="navegation__mobile">
           <span></span>
           <span></span>
@@ -65,16 +64,3 @@
       </div><!-- .navegation -->
     </div><!-- .bar -->
   </header>
-
-  <section class="hero">
-    <div class="container-hero container">
-      <h2 class="text-hero">Bienvenido a <br> Funcatec</h2>
-      <p class="text">
-        <span class="typed"></span>
-      </p>
-      <div class="text" id="text">
-        <p>Capacitate con nosotros</p>
-        <p>Da el primer paso para cumplir tus sueños</p>
-      </div>
-    </div>
-  </section>

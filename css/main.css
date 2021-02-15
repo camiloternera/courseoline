@@ -87,10 +87,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 :root {
-  --primario: #1F527D;
-  --secundario: #EC3475;
+  --primario: #1f527d;
+  --secundario: #ec3475;
 
-  --fuentePrincipal: 'Yanone Kaffeesatz', sans-serif;
+  --fuentePrincipal: "Yanone Kaffeesatz", sans-serif;
 }
 
 /* Globales */
@@ -98,20 +98,23 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 body {
   font-size: 16px; /* 1rem = 10px */
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 i {
-  color: #CDE1D7;
+  color: #cde1d7;
 }
 a {
   text-decoration: none;
 }
-h1, h2 {
+h1,
+h2 {
   margin: 0;
 }
 h2 {
@@ -130,6 +133,9 @@ img {
   display: inline-block;
   background-color: var(--secundario);
 }
+.button:hover {
+  background-color: #d7df21;
+}
 hr {
   display: none;
 }
@@ -140,12 +146,15 @@ hr {
   max-width: 120rem;
   margin: 0 auto;
 }
-.seccion{
+.seccion {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 .c-texto {
   text-align: center;
+}
+.m-4rem {
+  margin: 4rem 0;
 }
 
 /*----- Site-header -----*/
@@ -170,10 +179,10 @@ hr {
 }
 .footer-header .information a {
   text-decoration: none;
-  color: #CDE1D7;
+  color: #cde1d7;
 }
 .footer-header .information i {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 @media only screen and (min-width: 768px) {
   .footer-header .information {
@@ -195,10 +204,10 @@ hr {
 }
 .footer-header .session a {
   text-decoration: none;
-  color: #CDE1D7;
+  color: #cde1d7;
 }
 .footer-header .session i {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 @media only screen and (min-width: 768px) {
   .footer-header .session {
@@ -208,7 +217,7 @@ hr {
     margin-right: 1rem;
   }
   .footer-header .session a:last-of-type {
-      margin-right: 0;
+    margin-right: 0;
   }
 }
 /*navegation 3*/
@@ -235,21 +244,22 @@ hr {
   width: 100%;
   text-decoration: none;
   text-align: center;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   color: #808080;
   font-size: 2rem;
   /*main-bar de Scroll abajo*/
   background-image: linear-gradient(var(--primario), var(--primario));
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: 0% .3rem;
+  background-size: 0% 0.3rem;
   transition: background-size 3s;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
 }
-.navegation__main a:hover, .navegation__main a:focus {
+.navegation__main a:hover,
+.navegation__main a:focus {
   /* background-size: 99% .3rem; */
-  background-color: rgba(31, 82, 129, .5);
-  border-radius: .2rem;
+  background-color: rgba(31, 82, 129, 0.5);
+  border-radius: 0.2rem;
   /*End*/
 }
 
@@ -262,11 +272,11 @@ hr {
   /* margin-top: 1rem; */
 }
 .navegation__mobile span {
-  height: .8rem;
-  margin-bottom: .5rem;
+  height: 0.8rem;
+  margin-bottom: 0.5rem;
   background-color: #363636;
   display: block;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
 }
 .navegation__mobile:hover {
   cursor: pointer;
@@ -295,11 +305,12 @@ hr {
     background-image: linear-gradient(var(--primario), var(--primario));
     background-position: 0% 100%;
     background-repeat: no-repeat;
-    background-size: 0% .3rem;
-    transition: background-size .3s;
+    background-size: 0% 0.3rem;
+    transition: background-size 0.3s;
   }
-  .navegation__main a:hover, .navegation__main a:focus {
-    background-size: 60% .3rem;
+  .navegation__main a:hover,
+  .navegation__main a:focus {
+    background-size: 60% 0.3rem;
     /*End*/
     background-color: inherit;
     border-radius: unset;
@@ -320,38 +331,38 @@ hr {
   align-items: center;
 }
 .hero::after {
-    content: '';
-    background-color: rgba(0, 0, 0, .4);
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 .container-hero {
-    color: white;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    max-width: 100%;
+  color: white;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 100%;
 }
 .text-hero {
-    font-family: 'Rubik', sans-serif;
-    font-size: 10rem;
-    color: #ffffff;
-    font-weight: 700;
-    margin: 0;
-    text-transform: uppercase;
-    overflow: auto;
-    /* line-height: 1; */
+  font-family: "Rubik", sans-serif;
+  font-size: 10rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  overflow: auto;
+  /* line-height: 1; */
 }
 .text {
-    margin: 0;
-    font-family: var(--fuentePrincipal);
-    font-size: 3rem;
-    background-color: rgba(255,0,108,0.3);
-    text-transform: uppercase;
-    padding: 1rem 0;
+  margin: 0;
+  font-family: var(--fuentePrincipal);
+  font-size: 3rem;
+  background-color: rgba(255, 0, 108, 0.3);
+  text-transform: uppercase;
+  padding: 1rem 0;
 }
 
 /*----- Welcome To -Titutlo- -----*/
@@ -361,7 +372,7 @@ hr {
 .imagen-course img {
   /* filter: gray; */
   /* -webkit-filter: grayscale(1); */
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .imagen-course img:hover {
   /* -webkit-filter: grayscale(0); */
@@ -382,10 +393,10 @@ hr {
 .parrafo-welcome .button {
   width: 100%;
   text-align: center;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 .parrafo-welcome .button:hover {
-  background-color: #D7DF21;
+  background-color: #d7df21;
 }
 @media only screen and (min-width: 768px) {
   .content-welcome {
@@ -408,17 +419,18 @@ hr {
 }
 
 /*----- Our featured courses ----- */
-.our__featured--courses .texto {
-  margin: 4rem 0;
-}
-.container-courses{
-  display: flex;
-  flex-direction: column;
+.courses__container {
+  display: grid;
+  row-gap: 2rem;
 }
 .course {
   border: 0.1rem solid #b5b5b5;
   background-color: rgb(238, 238, 238);
   margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+.course:hover{
+  transform: scale(1.01);
 }
 .course img {
   height: 29.1rem;
@@ -427,83 +439,61 @@ hr {
   font-size: 2.6rem;
   margin: 0;
 }
-.content-course {
+.course__content {
   padding: 2rem;
 }
-.content-course p {
+.course__content p {
   margin: 1rem 0 4rem 0;
   text-align: justify;
 }
-.content-course .button {
+.course__content .button {
   padding: 1rem;
   display: block;
   text-align: center;
-  transition: all .5s ease;
-}
-.content-course .button:hover {
-  background-color: #D7DF21;
+  transition: all 0.5s ease;
 }
 @media only screen and (min-width: 768px) {
-  .container-courses {
-    justify-content: space-between;
-    /*flex-wrap: wrap;*/
-    flex-direction: row;
-  }
-  .course {
-      flex: 0 0 calc(33.3% - 1rem);
+  .courses__container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
   }
 }
 /*----- Content Contact -----*/
 .images-content {
-    background-image: url(../img/encuentra.jpg);
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    height: 40rem;
-    display: flex;
-    align-items: center;
-    text-align: left;
+  background-image: url(../img/encuentra.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  text-align: left;
 }
 .content-contact {
   flex: 0 0 95%;
-  color: #3B3543;
-}
-.content-contact .button {
-  transition: all .5s ease;
-}
-.content-contact .button:hover {
-  background-color: #D7DF21;
+  color: #3b3543;
 }
 
 /*----- Next Courses -----*/
-.next-courses .texto {
-   margin: 4rem 0;
+.courses__container--next {
+  display: grid;
+  row-gap: 2rem;
 }
-.content-course .button__next--course {
-  text-decoration: none;
-  color: rgb(150,150,150);
-  font-size: 2rem;
-  /*main-bar de Scroll abajo*/
-  background-image: linear-gradient(#D7DF21, #D7DF21);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% .3rem;
-  transition: background-size .3s;
-}
-.content-course .button__next--course:hover, .content-course .button__next--course:focus {
-  background-size: 60% .3rem;
-  /*End*/
-}
-.content-course .button__next--course::after {
-  font-family: 'FontAwesome';
-  content: '\f105';
-  margin-left: .5rem;
 
-}
+/* .button__next--course::after {
+  font-family: "FontAwesome";
+  content: "\f105";
+  margin-left: 0.5rem;
+} */
 @media only screen and (min-width: 768px) {
-  .content-course .button__next--course {
-    display: inline-block;
+  .courses__container--next {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
   }
+}
+/*----- Mapa -----*/
+.mapa {
+  width: 100%;
 }
 
 /*----- Footer -----*/
@@ -547,6 +537,46 @@ hr {
     font-size: 2rem;
   }
 }
+
+/****** Cursos  ******/
+/* .courses__container {
+  display: grid;
+  row-gap: 2rem;
+}
+.course {
+  border: 0.1rem solid #b5b5b5;
+  background-color: rgb(238, 238, 238);
+  
+}
+.course:hover {
+  
+  border: 0.1rem solid #056839;
+  box-shadow: 0 0 5rem #666666;
+}
+.course .course__content {
+  padding: 2rem;
+}
+.course__content h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 2 rem 0;
+}
+.course__content p {
+  text-align: justify;
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+.course__content .button {
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+@media only screen and (min-width: 768px) {
+  .container-courses {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+} */
 
 /* ==========================================================================
    Helper classes
@@ -721,4 +751,3 @@ hr {
     page-break-after: avoid;
   }
 }
-

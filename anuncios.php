@@ -1,76 +1,4 @@
-<!DOCTYPE html>
-<html class="no-js" lang="">
-
-<head>
-  <meta charset="utf-8">
-  <title>Titulo</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <meta name="theme-color" content="#fafafa">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-  <!-- CSS & Normalize (Clear default style) -->
-  <link rel="preload" href="css/normalize.css" as="style">
-  <link rel="preload" href="css/main.css" as="style">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/index.css">
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/14636498a2.js" crossorigin="anonymous"></script>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Rubik:wght@400;700&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-
-  <!-- Add your site or application content here -->
-  <header class="site-header">
-    <div class="container-footer-header">
-      <nav class="footer-header container">
-        <div class="information">
-          <a href="tel:7777777777"><i class="fas fa-phone"></i>+7777777777</a>
-          <a href="mailto:info@educon.edu"><i class="fas fa-envelope"></i>info@educon.edu</a>
-        </div>
-        <!--.informacion-->
-        <div class="session">
-          <a href="login.html"><i class="fas fa-sign-in-alt"></i>Login</a>
-          <a href="sing-up.html"><i class="fas fa-user-plus"></i>Sing up</a>
-        </div>
-        <!--.sesion-->
-      </nav>
-      <!--.footer-header-->
-    </div><!-- .contenido-header -->
-    <div class="content-navegation">
-      <div class="main-bar container clearfix">
-        <div class="logo">
-          <h1 class="main-brand">Logo</h1>
-        </div>
-        <div class="menu-movil">
-          <i class="fas fa-bars"></i>
-        </div>
-        <nav class="navegation cleafix">
-          <a href="index.html">Inicio</a>
-          <a href="cursos.html">Cursos</a>
-          <a href="anuncios.html">Anuncios</a>
-          <a href="blog.html">Blog</a>
-          <a href="contactanos.html">Contáctanos</a>
-        </nav>
-        <!--.navegation-->
-      </div>
-      <!--.barra-->
-    </div>
-    <!--.content-navegation-->
-  </header>
+<?php include_once "includes/template/header.php"; ?>
 
   <section class="hero">
     <div class="container-hero container">
@@ -81,64 +9,36 @@
 
   <!-- Anuncios  -->
   <main class="seccion container">
-    <article class="article-content">
+    <article class="article">
       <div class="date">
         <!-- Code... add date -->
       </div><!-- .date -->
-    </article><!-- .article-content -->
-    <article class="article-content">
+    </article><!-- .article -->
+    <article class="article">
       <div class="date">
         <!-- Code... add date -->
       </div>
     </article>
-    <article class="article-content">
+    <article class="article">
       <div class="date">
         <!-- Code... add date -->
       </div>
     </article>
-    <article class="article-content">
+    <article class="article">
       <div class="date">
         <!-- Code... add date -->
       </div>
     </article>
-    <article class="article-content">
+    <article class="article">
       <div class="date">
         <!-- Code... add date -->
       </div>
     </article>
-    <article class="article-content">
+    <article class="article">
       <div class="date">
         <!-- Code... add date -->
       </div>
     </article>
   </main>
 
-  <footer class="site-footer ">
-    <div class="container container-footer">
-      <nav class="navegation cleafix">
-        <a href="index.html">Inicio</a>
-        <a href="quienes-somos.html">Cursos</a>
-        <a href="anuncios.html">Anuncios</a>
-        <a href="blog.html">Blog</a>
-        <a href="contactanos.html">Contáctanos</a>
-      </nav>
-      <!--.navegation-->
-      <hr>
-      <p class="copyright">Camilo Ternera Duque - Todos los derechos reservados 2021 ©</p>
-    </div>
-  </footer>
-  <!-- End site -->
-
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
-</html>
+<?php include_once "includes/template/footer.php"; ?>
