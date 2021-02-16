@@ -28,12 +28,12 @@
 
   <main>
     <section class="courses seccion container">
-      <h2 class="texto c-texto m-4rem">Our featured courses</h2>
+      <h2 class="texto c-texto m-4rem">Nuestros cursos destacados</h2>
       <div class="courses__container">
         <div class="course">
           <img src="img/curso-ingles.jpg" alt="Curso de ingles">
           <div class="course__content">
-            <h3>Name course</h3>
+            <h3>Nombre del cursos</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Iusto debitis rerum tempore asperiores
               repellendus laboriosam vitae ipsam, velit ea impedit neque dolores labore odio deleniti repellat eaque
               porro iure corrupti.</p>
@@ -43,7 +43,7 @@
         <div class="course">
           <img src="img/cursos-de-excel.jpg" alt="Curso de Excel">
           <div class="course__content">
-            <h3>Name course</h3>
+            <h3>Nombre del cursos</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Iusto debitis rerum tempore asperiores
               repellendus laboriosam vitae ipsam, velit ea impedit neque dolores labore odio deleniti repellat eaque
               porro iure corrupti.</p>
@@ -53,7 +53,7 @@
         <div class="course">
           <img src="img/curso-photoshop.jpg" alt="Curso de PhotoShop">
           <div class="course__content">
-            <h3>Name course</h3>
+            <h3>Nombre del cursos</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Iusto debitis rerum tempore asperiores
               repellendus laboriosam vitae ipsam, velit ea impedit neque dolores labore odio deleniti repellat eaque
               porro iure corrupti.</p>
@@ -77,9 +77,9 @@
     <h2 class="texto c-texto m-4rem">NEXT Courses</h2>
     <div class="courses__container--next">
       <div class="course">
-        <img src="img/curso-ingles.jpg" alt="Curso de ingles">
+        <img src="img/p7.jpg" alt="Curso de ingles">
         <div class="course__content">
-          <h3>Name course</h3>
+          <h3>Nombre del cursos</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Iusto debitis rerum tempore asperiores
             repellendus laboriosam vitae ipsam, velit ea impedit neque dolores labore odio deleniti repellat eaque porro
             iure corrupti.</p>
@@ -87,9 +87,9 @@
         </div>
       </div>
       <div class="course">
-        <img src="img/cursos-de-excel.jpg" alt="Curso de Excel">
+        <img src="img/p8.jpg" alt="Curso de Excel">
         <div class="course__content">
-          <h3>Name course</h3>
+          <h3>Nombre del cursos</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Iusto debitis rerum tempore asperiores
             repellendus laboriosam vitae ipsam, velit ea impedit neque dolores labore odio deleniti repellat eaque porro
             iure corrupti.</p>
@@ -97,9 +97,9 @@
         </div>
       </div>
       <div class="course">
-        <img src="img/curso-photoshop.jpg" alt="Curso de PhotoShop">
+        <img src="img/p9.jpg" alt="Curso de PhotoShop">
         <div class="course__content">
-          <h3>Name course</h3>
+          <h3>Nombre del cursos</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Iusto debitis rerum tempore asperiores
             repellendus laboriosam vitae ipsam, velit ea impedit neque dolores labore odio deleniti repellat eaque porro
             iure corrupti.</p>
@@ -107,9 +107,9 @@
         </div>
       </div>
       <div class="course">
-        <img src="img/curso-photoshop.jpg" alt="Curso de PhotoShop">
+        <img src="img/p10.jpg" alt="Curso de PhotoShop">
         <div class="course__content">
-          <h3>Name course</h3>
+          <h3>Nombre del cursos</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Iusto debitis rerum tempore asperiores
             repellendus laboriosam vitae ipsam, velit ea impedit neque dolores labore odio deleniti repellat eaque porro
             iure corrupti.</p>
