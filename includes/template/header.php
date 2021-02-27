@@ -57,7 +57,7 @@
         <nav class="navegation__main"> <!-- style="display: flex;" -->
           <a href="index.php">Inicio</a>
           <a href="cursos.php">Cursos</a>
-          <a href="anuncios.php">Anuncios</a>
+          <a href="about.php">Nosotros</a>
           <a href="blog.php">Blog</a>
           <a href="contactanos.php">Contactanos</a>
         </nav>

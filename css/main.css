@@ -133,6 +133,7 @@ textarea {
     padding: 1rem 3rem;
     display: inline-block;
     background-color: var(--secundario);
+    transition: all 0.5s ease;
   }
   .button:hover {
     background-color: #d7df21;
@@ -394,10 +395,6 @@ textarea {
   .parrafo-welcome .button {
     width: 100%;
     text-align: center;
-    transition: all 0.5s ease;
-  }
-  .parrafo-welcome .button:hover {
-    background-color: #d7df21;
   }
   @media only screen and (min-width: 768px) {
     .content-welcome {
@@ -423,6 +420,12 @@ textarea {
     display: grid;
     row-gap: 2rem;
   }
+  .button--read {
+    color: gray;
+  }
+  .button--read:hover {
+    color: blue;
+  }
   @media only screen and (min-width: 768px) {
     .about {
       grid-template-columns: repeat(3, 1fr);
@@ -430,46 +433,31 @@ textarea {
     }
   }
 
-  /*----- Our featured courses ----- */
-  .courses__container {
+  /*----- About Index ----- */
+  .about-index {
     display: grid;
     row-gap: 2rem;
   }
-  .course {
-    border: 0.1rem solid #b5b5b5;
-    background-color: rgb(238, 238, 238);
-    margin-bottom: 2rem;
-    transition: all 0.3s ease;
+  .about-index__content {
+    padding: 2rem;
+    background-color: var(--secundario);
+    transition: all .3s ease-in-out;
   }
-  .course:hover{
+  .about-index__content:hover {
     transform: scale(1.01);
   }
-  .course img {
-    height: 29.1rem;
-  }
-  .course h3 {
-    font-size: 2.6rem;
-    margin: 0;
-  }
-  .course__content {
-    padding: 2rem;
-  }
-  .course__content p {
-    margin: 1rem 0 4rem 0;
-    text-align: justify;
-  }
-  .course__content .button {
-    padding: 1rem;
-    display: block;
-    text-align: center;
-    transition: all 0.5s ease;
+  .about-index__text {
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+    color: #ffffff;;
   }
   @media only screen and (min-width: 768px) {
-    .courses__container {
+    .about-index {
       grid-template-columns: repeat(3, 1fr);
       column-gap: 2rem;
     }
   }
+
   /*----- Content Contact -----*/
   .images-content {
     background-image: url(../img/encuentra.jpg);
@@ -491,16 +479,39 @@ textarea {
     display: grid;
     row-gap: 2rem;
   }
-
-  /* .button__next--course::after {
-    font-family: "FontAwesome";
-    content: "\f105";
-    margin-left: 0.5rem;
-  } */
+  .course {
+    border: 0.1rem solid #b5b5b5;
+    background-color: rgb(238, 238, 238);
+    padding: 2rem;
+    transition: all .5s ease-in-out;
+  }
+  .course:hover {
+    border: 0.1rem solid var(--secundario);
+    box-shadow: 0 0 5rem #666666;
+    transform: scale(1.01);
+  }
+  .course__content h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+  }
+  .course__content p {
+    text-align: justify;
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+  }
+  .course__content .button {
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
   @media only screen and (min-width: 768px) {
     .courses__container--next {
       grid-template-columns: repeat(2, 1fr);
       column-gap: 2rem;
+    }
+    .course__content .button {
+      width: auto;
     }
   }
   /*----- Mapa -----*/
@@ -551,44 +562,16 @@ textarea {
   }
 
   /****** Cursos  ******/
-  /* .courses__container {
+  .courses__container {
     display: grid;
     row-gap: 2rem;
   }
-  .course {
-    border: 0.1rem solid #b5b5b5;
-    background-color: rgb(238, 238, 238);
-
-  }
-  .course:hover {
-
-    border: 0.1rem solid #056839;
-    box-shadow: 0 0 5rem #666666;
-  }
-  .course .course__content {
-    padding: 2rem;
-  }
-  .course__content h3 {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    margin: 2 rem 0;
-  }
-  .course__content p {
-    text-align: justify;
-    font-size: 1.6rem;
-    margin-bottom: 4rem;
-  }
-  .course__content .button {
-    width: 100%;
-    text-align: center;
-    transition: all 0.5s ease;
-  }
   @media only screen and (min-width: 768px) {
-    .container-courses {
+    .courses__container {
       grid-template-columns: repeat(3, 1fr);
       column-gap: 2rem;
     }
-  } */
+  }
 
 /* ==========================================================================
    Helper classes
