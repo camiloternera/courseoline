@@ -45,18 +45,22 @@
     });
 
     // ReadMore & ReadLess
+    let i = 0;
     if (document.getElementById('buttonRead')) {
-
-      let i = 0;
       let buttonRead = document.querySelector('#buttonRead').addEventListener ('click', function(){
+        // console.log(i);
         if (!i) {
-          console.log('funcionando');
-          document.getElementById('readMore').style.display = 'inline';
+          // console.log(i);
+          document.getElementById('read').style.display = 'inline';
+          document.getElementById('buttonRead').innerHTML = 'Leer menos...';
           i = 1;
         } else {
-          document.getElementById('readMore').style.display = 'none';
+          document.getElementById('read').style.display = 'none';
+          document.getElementById('buttonRead').innerHTML = 'Leer más...';
           i = 0;
+          // console.log(i);
         }
+        // console.log(i);
       });
     }
   });

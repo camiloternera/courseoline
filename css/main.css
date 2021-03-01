@@ -114,12 +114,26 @@ textarea {
   a {
     text-decoration: none;
   }
-  h1,
+  h1 {
+    font-size: 4.8rem;
+  }
   h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: 3.2rem;
+  }
+  h4{
+    font-size: 2.8rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
     margin: 0;
   }
   h2 {
-    font-size: 3.4rem;
     text-transform: uppercase;
   }
   img {
@@ -149,8 +163,8 @@ textarea {
     margin: 0 auto;
   }
   .seccion {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
   .c-texto {
     text-align: center;
@@ -420,15 +434,22 @@ textarea {
     display: grid;
     row-gap: 2rem;
   }
-  .button--read {
-    color: gray;
+  .icon {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 8rem;
   }
-  .button--read:hover {
-    color: blue;
+  .icon__mision {
+    color: #FCA311;
   }
+  
+  .about__mision .read {
+    display: none;
+  }
+  
   @media only screen and (min-width: 768px) {
     .about {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       column-gap: 2rem;
     }
   }
