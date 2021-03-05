@@ -429,30 +429,6 @@ textarea {
       text-align: center;
     }
   }
-  /*--- AboutMe ---*/
-  .about {
-    display: grid;
-    row-gap: 2rem;
-  }
-  .icon {
-    text-align: center;
-    margin: 0 auto;
-    font-size: 8rem;
-  }
-  .icon__mision {
-    color: #FCA311;
-  }
-  
-  .about__mision .read {
-    display: none;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .about {
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 2rem;
-    }
-  }
 
   /*----- About Index ----- */
   .about-index {
@@ -479,6 +455,47 @@ textarea {
     }
   }
 
+  /*--- About ---*/
+  .about {
+    display: grid;
+    row-gap: 2rem;
+  }
+  .icon {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 8rem;
+    background-color: var(--secundario);
+  }
+  .icon__mision {
+    color: #FCA311;
+  }
+  .about__mision .read {
+    display: none;
+  }
+  .glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .glyphicon-user {
+    font-family: 'FontAwesome';
+    content: '\f0c0';
+    font-size: 2rem;
+    color: #fff;
+  }
+  @media only screen and (min-width: 768px) {
+    .about {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+    }
+  }
   /*----- Content Contact -----*/
   .images-content {
     background-image: url(../img/encuentra.jpg);

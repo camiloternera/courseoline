@@ -1,11 +1,11 @@
 <footer class="site-footer ">
     <div class="container container-footer">
       <nav class="navegation cleafix">
-        <a href="index.html">Inicio</a>
-        <a href="quienes-somos.html">Cursos</a>
-        <a href="anuncios.html">Anuncios</a>
-        <a href="blog.html">Blog</a>
-        <a href="contactanos.html">Contáctanos</a>
+        <a href="index.php">Inicio</a>
+        <a href="cursos.php">Cursos</a>
+        <a href="about.php">Nosotros</a>
+        <a href="blog.php">Blog</a>
+        <a href="contactanos.php">Contáctanos</a>
       </nav><!-- .navegation -->
       <hr>
       <p class="copyright">Camilo Ternera Duque - Todos los derechos reservados 2021 ©</p>
