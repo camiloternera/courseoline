@@ -4,7 +4,7 @@
         <a href="index.php">Inicio</a>
         <a href="cursos.php">Cursos</a>
         <a href="about.php">Nosotros</a>
-        <a href="blog.php">Blog</a>
+        <a href="blog.php">Blog </a>
         <a href="contactanos.php">Contáctanos</a>
       </nav><!-- .navegation -->
       <hr>

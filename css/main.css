@@ -128,9 +128,7 @@ textarea {
     font-size: 2.8rem;
   }
   h1,
-  h2,
-  h3,
-  h4 {
+  h2 {
     margin: 0;
   }
   h2 {
@@ -335,7 +333,7 @@ textarea {
       margin: 0;
     }
   }
-  /*----- Hero -----*/
+  /* Hero */
   .hero {
     height: 55rem;
     background-image: url(../img/banner2.jpg);
@@ -364,7 +362,7 @@ textarea {
   }
   .text-hero {
     font-family: "Rubik", sans-serif;
-    font-size: 10rem;
+    font-size: 8rem;
     color: #ffffff;
     font-weight: 700;
     margin: 0;
@@ -372,16 +370,36 @@ textarea {
     overflow: auto;
     /* line-height: 1; */
   }
+  @media only screen and (min-width: 768px) {
+    .text-hero {
+      font-size: 10rem;
+    }
+  }
+  @media only screen and (min-width: 990px) {
+    .text-hero {
+      font-size: 12rem;
+    }
+  }
   .text {
     margin: 0;
     font-family: var(--fuentePrincipal);
-    font-size: 3rem;
+    font-size: 1.8rem;
     background-color: rgba(255, 0, 108, 0.3);
     text-transform: uppercase;
     padding: 1rem 0;
   }
+  @media only screen and (min-width: 768px) {
+    .text {
+      font-size: 2rem;
+    }
+  }
+  @media only screen and (min-width: 990px) {
+    .text {
+      font-size: 2.4rem;
+    }
+  }
 
-  /*----- Welcome To -Titutlo- -----*/
+  /* Welcome To -Titutlo */
   .content-welcome {
     display: grid;
   }
@@ -392,7 +410,7 @@ textarea {
   }
   .imagen-course img:hover {
     /* -webkit-filter: grayscale(0); */
-    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
   .parrafo-welcome {
     width: 95%;
@@ -430,7 +448,7 @@ textarea {
     }
   }
 
-  /*----- About Index ----- */
+  /* About Index */
   .about-index {
     display: grid;
     row-gap: 2rem;
@@ -455,40 +473,79 @@ textarea {
     }
   }
 
-  /*--- About ---*/
+  /****** About  ******/
+  .content__hero {
+    background-color: rgba(255, 0, 108, 0.3);
+  }
   .about {
     display: grid;
     row-gap: 2rem;
   }
   .icon {
     text-align: center;
-    margin: 0 auto;
-    font-size: 8rem;
     background-color: var(--secundario);
+    border-radius: 5rem;
   }
-  .icon__mision {
-    color: #FCA311;
+  .icon .about__icon {
+    font-size: 8rem;
+    padding: 1rem 0;
+  }
+  .icon:hover .about__icon,
+  .icon--objectives:hover .about__icon--small {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+  }
+  .icon:hover {
+    background-color: #1F527D;
+  }
+  .about__icon {
+    color: #FFF;
+  }
+  .about__mision > h3,
+  .about__vision > h3 {
+    margin: 2rem 0;
+  }
+  .about__mision > p,
+  .about__vision > p {
+    margin-bottom: 1rem;
   }
   .about__mision .read {
     display: none;
   }
-  .glyphicon {
-    position: relative;
-    top: 1px;
-    display: inline-block;
-
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  .glyphicon-user {
-    font-family: 'FontAwesome';
-    content: '\f0c0';
-    font-size: 2rem;
+  .button--read {
+    appearance: none;
+    border: .2rem solid #000;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: var(--primario);
     color: #fff;
+    transition: .5s all ease-in-out;
+  }
+  .button--read:hover {
+    cursor: pointer;
+  }
+  @media only screen and (min-width: 468px) {
+    .button--read {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      margin: 0 auto; /*Centrar el boton, realizar  */
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .button--read {
+      margin: 0;
+      width: 50%;
+    }
   }
   @media only screen and (min-width: 768px) {
     .about {
@@ -496,7 +553,39 @@ textarea {
       column-gap: 2rem;
     }
   }
-  /*----- Content Contact -----*/
+
+  /* Objetivos */
+  .objectives-Funcatec {
+    margin-top: 4rem;
+    display: grid;
+    gap: 2rem;
+  }
+  .objectives {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .objectives:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+  .objectives > p {
+    margin: 0 ;
+  }
+  .icon--objectives {
+    border-radius: unset;
+    padding: 1rem;
+  }
+  .about__icon--small {
+    font-size: 5rem;
+    /* padding: 1rem; */
+  }
+  @media only screen and (min-width: 768px) {
+     .objectives-Funcatec {
+       grid-template-columns: repeat(2, 1fr);
+     }
+  }
+  /* Content Contact */
   .images-content {
     background-image: url(../img/encuentra.jpg);
     background-position: center center;
@@ -512,7 +601,7 @@ textarea {
     color: #3b3543;
   }
 
-  /*----- Next Courses -----*/
+  /* Next Courses */
   .courses__container--next {
     display: grid;
     row-gap: 2rem;
@@ -552,12 +641,12 @@ textarea {
       width: auto;
     }
   }
-  /*----- Mapa -----*/
+  /* Mapa */
   .mapa {
     width: 100%;
   }
 
-  /*----- Footer -----*/
+  /* Footer */
   .site-footer {
     background-color: #363636;
     padding: 2rem;
@@ -610,6 +699,8 @@ textarea {
       column-gap: 2rem;
     }
   }
+
+  /****** Contactanos  ******/
 
 /* ==========================================================================
    Helper classes

@@ -6,7 +6,8 @@
     /* Utilizando libreria TYPED.JS
       https://github.com/mattboldt/typed.js/
     */
-    if (document.getElementById('text')) {
+   function indexAnimatonText() {
+     if (document.getElementById('text')) {
       const typed = new Typed(".typed", {
         // strings: [
         //   "Capacitate con nosotros",
@@ -26,6 +27,8 @@
         contentType: "html" // 'html' o 'null' para texto sin formato
       });
     }
+   }
+   indexAnimatonText();
 
     // Menu Responsive
 		$('.navegation__mobile').on('click', function() {
@@ -40,28 +43,28 @@
         $('.navegation__main').attr('style', 'display:flex'); // Linea para que la navegacion se display flex despues de 768px
 			} else {
         $('.navegation__main').hide();
-
 			}
     });
 
     // ReadMore & ReadLess
-    let i = 0;
-    if (document.getElementById('buttonRead')) {
-      let buttonRead = document.querySelector('#buttonRead').addEventListener ('click', function(){
-        // console.log(i);
-        if (!i) {
-          // console.log(i);
-          document.getElementById('read').style.display = 'inline';
-          document.getElementById('buttonRead').innerHTML = 'Leer menos...';
-          i = 1;
-        } else {
-          document.getElementById('read').style.display = 'none';
-          document.getElementById('buttonRead').innerHTML = 'Leer más...';
-          i = 0;
-          // console.log(i);
-        }
-        // console.log(i);
-      });
+    function readMoreReadLess () {
+      let i = 0;
+      let buttonRead = document.getElementById('buttonRead');
+      let styleReadParrafo = document.getElementById('read');
+      if (buttonRead) {
+        buttonRead.addEventListener('click' , function(){
+          if (!i) {
+            styleReadParrafo.style.display = 'inline';
+            document.getElementById('buttonRead').innerHTML = 'Leer menos...';
+            i = 1;
+          } else {
+            styleReadParrafo.style.display = 'none';
+            document.getElementById('buttonRead').innerHTML = 'Leer más...';
+            i = 0;
+          }
+        });
+      }
     }
+    readMoreReadLess();
   });
 })();
