@@ -2,8 +2,7 @@
 
   <section class="hero">
     <div class="container-hero container">
-      <h2 class="text-hero">Welcome to -Titile-</h2>
-      <p>-Subtitle or Slogan-</p>
+      <h2 class="text-hero">Blog</h2>
     </div>
   </section>
 

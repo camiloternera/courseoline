@@ -146,9 +146,11 @@ textarea {
     display: inline-block;
     background-color: var(--secundario);
     transition: all 0.5s ease;
+    border: none;
   }
   .button:hover {
     background-color: #d7df21;
+    cursor: pointer;
   }
   hr {
     display: none;
@@ -701,6 +703,41 @@ textarea {
   }
 
   /****** Contactanos  ******/
+  .form {
+    background-color: #fff;
+    width: 100%;
+    padding: 5rem;
+  }
+  .field {
+    display: flex;
+    margin-bottom: 2rem;
+    /* gap: 2rem; */
+  }
+  .field__label {
+    flex: 0 0 9rem;
+    padding-right: 2rem; /* Compatibilidad */
+    text-align: right;
+  }
+  .field__input {
+    flex: 1;
+    border: .1rem solid #b9b8b8;
+    padding: 1rem;
+  }
+  .field__input--textarea {
+    height: 20rem;
+  }
+  .button--contactanos {
+    width: 100%;
+  }
+  @media only screen and (min-width: 768px) {
+    .field--submit {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .button--contactanos {
+      width: auto;
+    }
+  }
 
 /* ==========================================================================
    Helper classes
